@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta NSLM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Encuesta NSLM</h1>
+        <p id="description" class="description text-center">
+          Gracias por tomarse el tiempo de ayudarnos a mejorar nuestro servicio
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Introduzca su nombre"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Introduzca su correo electronico"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label"
+            >Edad <span class="clue">(opcional)</span></label
+          >
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Edad"
+          />
+        </div>
+        <div class="form-group">
+          <p>En que grado educativo se encuentra su hijo/a?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value
+              >Seleccione el grado educativo</option
+            >
+            <option value="inicial">Inicial</option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Esta satisfecho/a con la calidad educativa que se le brinda a su
+            hijo/a?
+          </p>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input-radio"
+              checked
+            />Definitivamente
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="maybe"
+              class="input-radio"
+            />Más o menos
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              class="input-radio"
+            />No estoy satisfecho
+          </label>
+        </div>
+        <div class="form-group">
+          <p>
+            Que actividades extracurriculares lleva su hijo/a?
+          </p>
+          <select
+            name="activities"
+            id="activities"
+            class="formp-control"
+            required
+          >
+            <option disabled selected value>Seleccione la actividad</option>
+            <option value="swimming">Natación</option>
+            <option value="basketball">Basketball</option>
+            <option value="futbol">Fútbol</option>
+            <option value="chess">Ajedrez</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Qué aspecto quisiera que mejoremos?</p>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="academic"
+              class="input-checkbox"
+            />Academico
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="finance"
+              class="input-checkbox"
+            />Financiero
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="infrastructure"
+              class="input-checkbox"
+            />Infrastructura
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="extracurricular-activities"
+              class="input-checkbox"
+            />Actividades Extracurriculares
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Algún comentario o sugerencia?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            class="input-textarea"
+            placeholder="Introduzca alguna sugerencia"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Listo!
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
+<!-- 
+
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+-->
